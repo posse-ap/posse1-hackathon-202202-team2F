@@ -9,21 +9,12 @@ footer>div{
 }
 body {
   background-color: beige;
+  margin:0;
+  padding:0;
   /* position: fixed; */
 }
 
 /* //////////header//////////// */
-.all-header {
-  display: flex;
-  justify-content: center;
-  background: white;
-  position: fixed;
-  width: 100%;
-  height: 96px;
-  z-index: 100;
-  box-shadow: 3px 3px 3px rgb(204 204 204);
-}
-
 .site-header {
   display: flex;
   align-items: center;
@@ -38,6 +29,7 @@ body {
   align-items: center;
   font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   height: 96px;
+  top:0;
 }
 
 .posselogo img {
@@ -158,12 +150,11 @@ h2 {
 .input-birth{
     display:flex;
 }
-.input-birth>div{
+.input-birth>div+div{
     margin-left:100px;
 }
 #decide-birth, #decide-color{
     margin-top:20px;
-    margin-left:100px;
 }
 #question1{
     margin-left:100px;
@@ -173,18 +164,19 @@ h2 {
     display:flex;
 }
 #choice-container1>div,#choice-container2>div{
-    margin-left:100px;
     margin-top:20px;
     background-color:white;
     border:1px solid black;
     padding:10px;
+}
+#choice-container1>div+div,#choice-container2>div+div{
+    margin-left:100px;
 }
 #question2{
     margin-left:100px;
     margin-top:20px;
 }
 #answer2{
-    margin-left:100px;
     margin-top:20px;
     margin-bottom:20px;
     display:inline-block;

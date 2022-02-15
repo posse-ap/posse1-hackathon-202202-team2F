@@ -8,6 +8,8 @@ const choice10=document.getElementById('choice10');
 const choice11=document.getElementById('choice11');
 const choice12=document.getElementById('choice12');
 const answer2=document.getElementById('answer2');
+var colorCode;
+var j;
 const choice2=[
   document.getElementById('choice20'),
   document.getElementById('choice21'),
@@ -21,11 +23,18 @@ choice10.style.backgroundColor=choiceColor10;
 function checkYearMonth(){
   let yearText=editYear.innerHTML;
   let monthText=editMonth.innerHTML;
-  let colorCode=yearText+monthText;
+  colorCode=yearText+monthText;
+  console.log(colorCode);
 }
 //年月取得を確定時実行
 decideBirth.addEventListener('click',function(){
   checkYearMonth();
+  j=Math.floor(Math.random()*3);
+  for(let i=0;i<=2;i++){
+    choice2[i].style.backgroundColor="white";
+  }
+  choice2[j].style.backgroundColor=`#${colorCode}`;
+
 })
 //色の入力内容を取得
 function changeColor(){
@@ -56,29 +65,6 @@ for(let i=0;i<=2;i++){
 
 
 
-//選ぶゲームによって完成画面の画像を変える
-// if () {
-
-// }
 
 
 
-
-const func1 = () => {
-  console.log('a');
-  const enjoy = document.getElementById('enjoyButton');
-  const easy = document.getElementById('easyButton');
-  const difficult = document.getElementById('difficultButton');
-  const comment = document.getElementsByName('comments')
-  const checkButton = document.getElementById('checkButton');
-  console.log('b');
-
-  for (let i =0; i<comment.length; i++) {
-    if(comment[i].checked){
-      console.log(comment[i].value);
-      console.log('c');
-    }
-  }
-}
-console.log('d')
-// checkButton.addEventListener('click',buttonClick);
