@@ -1,0 +1,9 @@
+footer{
+    display:flex;
+    text-align:center;
+    background-color: green;
+    width:100%;
+}
+footer>div{
+    width:calc(100% / 3);
+}
