@@ -41,6 +41,8 @@ decideColor.addEventListener('click',function(){
 for(let i=0;i<=2;i++){
   choice2[i].addEventListener('click',function(){
     answer2.innerHTML="こんにちは";//クリック時表示成功
+    checkYearMonth();
+    choice2[i].style.backgroundColor=`#${colorCode}`;
   })
 }
 
