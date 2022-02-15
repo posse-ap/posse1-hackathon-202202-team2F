@@ -39,25 +39,26 @@ function checkBirth(){
 }
 //年月取得を確定時実行
 decideBirth.addEventListener('click',function(){
-  checkBirth();
-  j=Math.floor(Math.random()*3);
-  for(let i=0;i<=2;i++){
-    choice2[i].style.backgroundColor="rgb(255,255,255)";
-    choice2[i].style.pointerEvents="fill";
+  if(editDate.innerHTML!=""&&editMonth.innerHTML!=""&&editYear.innerHTML!=""){
+    checkBirth();
+    j=Math.floor(Math.random()*3);
+    for(let i=0;i<=2;i++){
+      choice2[i].style.pointerEvents="fill";
+    }
+    choice2[j].style.backgroundColor=colorCode;
+    if(j==0){
+      choice2[1].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+      choice2[2].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+    }
+    if(j==1){
+      choice2[0].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+      choice2[2].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+    }
+    if(j==2){
+      choice2[0].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+      choice2[1].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+    };
   }
-  choice2[j].style.backgroundColor=colorCode;
-  if(j==0){
-    choice2[1].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
-    choice2[2].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
-  }
-  if(j==1){
-    choice2[0].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
-    choice2[2].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
-  }
-  if(j==2){
-    choice2[0].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
-    choice2[1].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
-  };
 });
 //色の入力内容を取得
 function changeColor(){
@@ -72,7 +73,7 @@ decideColor.addEventListener('click',function(){
 })
 for(let i=0;i<=2;i++){
   choice2[i].addEventListener('click',function(){
-    if(editDate.innerHTML!=""&&editMonth.innerHTML!=""&&editYear.innerHTML!=""){
+    
     console.log(choice2[i].style.backgroundColor);
     console.log(colorCode);
       if(choice2[i].style.backgroundColor==colorCode){
@@ -84,9 +85,9 @@ for(let i=0;i<=2;i++){
         answer2.style.color="red";
       }
       shareSection.style.display="flex";
-    };
-  });
-}
+    });
+  };
+
 
 
 window.addEventListener('load',function(){
@@ -94,6 +95,9 @@ window.addEventListener('load',function(){
   choice2[0].style.pointerEvents="none";
   choice2[1].style.pointerEvents="none";
   choice2[2].style.pointerEvents="none";
+  editYear.innerHTML="";
+  editMonth.innerHTML="";
+  editDate.innerHTML="";
   document.onkeypress=function(e){
     if(e.key==='Enter'){
       return false;
