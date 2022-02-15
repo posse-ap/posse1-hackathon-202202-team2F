@@ -8,10 +8,7 @@ footer>div{
     width:calc(100% / 3);
 }
 body {
-  margin: 0 auto;
-  width: 1200px;
   background-color: beige;
-
   /* position: fixed; */
 }
 
@@ -75,6 +72,10 @@ body {
     white-space: nowrap;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
 /* /////////section1//////////  */
 #main-title {
   margin: 20px 0;
