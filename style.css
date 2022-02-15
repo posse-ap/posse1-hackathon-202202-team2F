@@ -212,6 +212,10 @@ h2 {
     border: 1px solid black;
 }
 
+.responsive-tweet {
+    display: none;
+}
+
 
 /* /////// section2/////////// */
 
@@ -295,6 +299,10 @@ footer {
     .site-header {
         max-width: 600px;
     }
+    
+    #main-title {
+        font-size: 5vw;
+    }
 
     #main-container {
         width: 90%;
@@ -305,9 +313,12 @@ footer {
         display: none;
     }
 
-    #main-title {
-        font-size: 5vw;
+    .responsive-tweet {
+        display: block;
+        width: 90%;
+        margin: auto;
     }
+
 
     .main {
         flex-direction: column;
