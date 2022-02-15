@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-  <!-- header -->
-  <!-- section1 -->
-  <!-- section2-->
-  <section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>制作物の名前</title>
+  </head>
+  <body class="all-container">
+    <!-- header -->
+    <!-- <header>
+      <div class="all-header">
+        <div class="site-header">
+          <h1 class="posselogo">
+            <a href="#top">
+              <img src="./img/posselogo.jpg" alt="POSSEロゴ" />
+            </a>
+          </h1>
+        </div>
+        <div>
+          <a class="linelogo" href="https://lin.ee/sQdqKjf"></a>
+          <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加">
+        </div>
+      </div>
+    </header> -->
+    <!-- section1 -->
+    <!-- section2-->
+    <section class="share-section">
+    <div class="share-img">
+      <img src="./img/janken.png" alt="じゃんけんゲーム" id="game1-img">
+      <!-- <img src="" alt="丸バツゲーム" id="game2-img"> -->
+    </div>
+    <span>↓完成物を共有！！！↓</span>
+    <div class="share-comment">
+    <input type="checkbox" name="comments" value="楽しい！" id="enjoyButton">楽しい！
+    <input type="checkbox" name="comments" value="簡単！" id="easy-button">簡単！
+    <!-- <input type="checkbox" name="comments" value="難しい！" id="difficult-button">難しい！ -->
+    <input type="button" value="確認" onclick="func1()">
+    </div>
     <div>
-      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="感想を是非!!" data-via="posse_program" data-hashtags="表参道" data-related="posse_program" data-size="large" data-show-count="false">Tweet</a>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道" data-related="posse_program" data-size="large" data-show-count="false" id="check-button">Tweet</a>
       <!-- urlおかしい//// -->
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </section>
-  <!-- section3 -->
-  <!-- footer -->
-</body>
+    <!-- section3 -->
+    <!-- footer -->
+  </body>
+  <script src="script.js"></script>
 </html>
