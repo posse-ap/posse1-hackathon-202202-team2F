@@ -95,18 +95,47 @@ h2 {
   margin: 30px 0;
   font-size: 30px;
 }
-
-.game-button {
-  display: flex;
+#question0{
+    margin-left:100px;
+    margin-bottom:20px;
+    margin-top:20px;
 }
-
-
-
+.input-birth{
+    display:flex;
+}
+.input-birth>div{
+    margin-left:100px;
+}
+#decide-birth, #decide-color{
+    margin-top:20px;
+    margin-left:100px;
+}
+#question1{
+    margin-left:100px;
+    margin-top:20px;
+}
+#choice-container1,#choice-container2{
+    display:flex;
+}
+#choice-container1>div,#choice-container2>div{
+    margin-left:100px;
+    margin-top:20px;
+    background-color:white;
+    border:1px solid black;
+    padding:10px;
+}
+#question2{
+    margin-left:100px;
+    margin-top:20px;
+}
 #side-container {
   width: 390px;
   height: 600px;
 }
-
+.input{
+    background-color:white;
+    border:1px solid black;
+}
 
 /* /////// section2/////////// */
 .share-section {
