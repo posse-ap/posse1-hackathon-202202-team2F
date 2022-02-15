@@ -15,8 +15,10 @@
 <body>
     <header id="posselogoLink wrapper">
         <!-- 横幅ずれないよう固定 -->
-        <div class="all-header">
-            <div class="site-header">
+
+        <div class="site-header">
+            <div class="title-of-website">
+
                 <div class="menu-content">
                     <ul class="topmenu">
                         <li class="header-list">
@@ -32,19 +34,26 @@
                     <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
                         <img src="posselogo.jpg" alt="POSSEロゴ">
                     </a>
+                    </a>
                 </h1>
+            </div>
+            <div>
                 <a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw" class="btn-social-circle btn-social-circle--twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
+
                 <a href="https://www.instagram.com/posse_programming/?ref=badge" class="btn-social-circle btn-social-circle--instagram">
                     <span class="insta">
-              <i class="fab fa-instagram"></i>
-            </span>
+            <i class="fab fa-instagram"></i>
+          </span>
                 </a>
-                <a class="linelogo" href="https://lin.ee/sQdqKjf">
-                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="">
+
+
+                <a href="https://lin.ee/sQdqKjf" class="btn-social-circle btn-social-circle--line">
+                    <i class="fab fa-line"></i>
                 </a>
             </div>
+        </div>
     </header>
     <div class="container">
         <h1 id="main-title">プログラミング体験をしてみよう!</h1>
@@ -59,7 +68,7 @@
                             <div>生まれた月(例:01)<br>(いろんな2桁試してみると?)
                                 <div class="input" placeholder="4" id="edit-month" contenteditable="true"></div>
                             </div>
-                            <div>生まれた日(例:27)<br>(いろんな二桁試してみると?) 
+                            <div>生まれた日(例:27)<br>(いろんな二桁試してみると?)
                                 <div class="input" placeholder="29" id="edit-date" contenteditable="true"></div>
                             </div>
                         </div>
@@ -88,55 +97,75 @@
                 </div>
             </div>
             <div id="side-container">
-                <a class="twitter-timeline" data-lang="ja" data-width="470" data-height="600" data-theme="light"
-                    href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a>
+                <a class="twitter-timeline" data-lang="ja" data-width="470" data-height="600" data-theme="light" href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-        </section>
-        <!-- section2-->
-        <section id="share-section" class="share-section">
-            <p>あなたが書いたカラーは、<span class="">プログラミングのコード</span>として使われています!</p>
-            <p>これはPOSSEの<span>半年間の活動</span>で実際に作れるようになります!</p>
-            <span>↓あなたのラッキーカラーを共有↓</span>
-
-            <div class="share-button">
-                <div>
-                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                        data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道"
-                        data-related="posse_program" data-size="large" data-show-count="false"
-                        id="check-button">Tweet</a>
-                    <!-- urlおかしい//// -->
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <div>
-
-                </div>
-                <!-- 表示されない -->
+            <div class="responsive-tweet">
+                <blockquote class="twitter-tweet">
+                    <p lang="ja" dir="ltr">プログラミングは9割挫折するって言われてるけど、POSSEに入ってから1年以上プログラミング継続できてるなぁ😌<br>メンバーにわからないところ聞いたり、一緒に勉強できるから楽しいし、何より学びになるのが最高すぎる✨<br>これからも全員で成長していこうねぇー！<br><br> <a href="https://twitter.com/hashtag/%E9%A7%86%E3%81%91%E5%87%BA%E3%81%97%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8A%E3%81%9F%E3%81%84?src=hash&amp;ref_src=twsrc%5Etfw">#駆け出しエンジニアと繋がりたい</a></p>&mdash;
+                    POSSE | 新メンバー募集中！ (@posse_program) <a href="https://twitter.com/posse_program/status/1436269216013815810?ref_src=twsrc%5Etfw">September 10, 2021</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-        </section>
+    </div>
+    </section>
+    <!-- section2-->
+    <section class="share-section">
+        <div class="explain-message">
+            <p>あなたが書いたカラーは、<span class="important-word">プログラミングのコード</span>として使われています!</p>
+            <p>これはPOSSEの<span class="important-word">半年間の活動</span>で実際に作れるようになります!</p>
+        </div>
+        <div class="share-message">
+            <span>↓あなたのラッキーカラーを共有↓</span>
+        </div>
+
+        <!-- section2-->
+
+
+        <div class="share-button">
+            <div>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道" data-related="posse_program" data-size="large" data-show-count="false" id="check-button">Tweet</a>
+                <!-- urlおかしい//// -->
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div>
+
+            </div>
+            <!-- 表示されない -->
+        </div>
+    </section>
     </div>
     <!-- footer -->
     <footer>
         <div>
-            <div>ITセミナーに参加したい！</div>
+            <div>ITセミナーに参加しよう</div>
             <div>
 
-                <a class="linelogo footer-linelogo" href="https://lin.ee/sQdqKjf">
-                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加">
+                <a href="https://lin.ee/sQdqKjf" class="btn-social-circle btn-social-circle--line">
+                    <i class="fab fa-line"></i>
                 </a>
             </div>
             <!-- 表示されない -->
         </div>
         <div>
-            <div>twitterでコード公開中！</div>
-            <div></div>
+            <div>twitter限定でコード公開!!</div>
+            <div>
+                <a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw" class="btn-social-circle btn-social-circle--twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
         <div>
-            <div>「大学では教えてくれない」あれこれ</div>
-            <div></div>
-        </div>
+            <div>大学では教えてくれない学生に重要な情報を公開!!</div>
+            <div>
+                <a href="https://www.instagram.com/posse_programming/?ref=badge" class="btn-social-circle btn-social-circle--instagram">
+                    <span class="insta">
+            <i class="fab fa-instagram"></i>
+          </span>
+                </a>
+            </div>
     </footer>
 </body>
 <script src="script.js"></script>
 <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
 </html>
