@@ -288,10 +288,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    html {
-        /* max-width: 600px; */
-    }
-
     .all-header {
         max-width: 600px;
     }
