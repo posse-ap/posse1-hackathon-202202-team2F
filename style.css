@@ -9,6 +9,8 @@ footer>div{
 }
 body {
   background-color: beige;
+  margin:0;
+  padding:0;
   /* position: fixed; */
 }
 
