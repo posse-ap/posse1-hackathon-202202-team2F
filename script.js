@@ -26,6 +26,7 @@ const decideColor=document.getElementById('decide-color');
 //例としてgreenと緑色表示
 let choiceColor10=choice10.innerHTML;
 choice10.style.backgroundColor=choiceColor10;
+
 //年月の入力内容を取得
 function checkBirth(){
   yearText=editYear.innerHTML;
