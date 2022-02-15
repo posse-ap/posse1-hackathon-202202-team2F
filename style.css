@@ -129,6 +129,13 @@ h2 {
     margin-left:100px;
     margin-top:20px;
 }
+#answer2{
+    margin-left:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    display:inline-block;
+    text-align:center;
+}
 #side-container {
   width: 390px;
   height: 600px;
