@@ -1,12 +1,18 @@
-html {
-  overflow: auto;
-  scroll-behavior: smooth;
-} 
-
+footer{
+    display:flex;
+    text-align:center;
+    background-color: green;
+    width:100%;
+}
+footer>div{
+    width:calc(100% / 3);
+}
 body {
-  overflow: hidden;
-} 
+  background-color: beige;
+  /* position: fixed; */
+}
 
+/* //////////header//////////// */
 .all-header {
   display: flex;
   justify-content: center;
@@ -21,6 +27,16 @@ body {
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  z-index: 100;
+  box-shadow: 3px 3px 3px rgb(204 204 204);
+  display: flex;
+  align-items: center;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   height: 96px;
 }
 
@@ -108,3 +124,106 @@ font-size: 50px;
   
 }
 
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+/* /////////section1//////////  */
+#main-title {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 50px;
+}
+.main {
+  display: flex;
+}
+#main-container {
+  width: 800px;
+  height: 600px;
+  margin-right: 10px;
+  background-color: aqua;
+}
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 30px;
+}
+#question0{
+    margin-left:100px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.input-birth{
+    display:flex;
+}
+.input-birth>div{
+    margin-left:100px;
+}
+#decide-birth, #decide-color{
+    margin-top:20px;
+    margin-left:100px;
+}
+#question1{
+    margin-left:100px;
+    margin-top:20px;
+}
+#choice-container1,#choice-container2{
+    display:flex;
+}
+#choice-container1>div,#choice-container2>div{
+    margin-left:100px;
+    margin-top:20px;
+    background-color:white;
+    border:1px solid black;
+    padding:10px;
+}
+#question2{
+    margin-left:100px;
+    margin-top:20px;
+}
+#answer2{
+    margin-left:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    display:inline-block;
+    text-align:center;
+}
+#side-container {
+  width: 390px;
+  height: 600px;
+}
+.input{
+    background-color:white;
+    border:1px solid black;
+}
+
+/* /////// section2/////////// */
+.share-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid grey;
+  /* margin-top: 20px; */
+  z-index: 1;
+  margin: 0 100px;
+}
+
+.share-button {
+  display: flex;
+  gap: 20px;
+}
+
+/* .share-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/* ///////section3 /////////// */
+ /*///////// footer ///////////// */
