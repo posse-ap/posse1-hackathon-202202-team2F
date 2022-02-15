@@ -1,14 +1,8 @@
 'use strict';
 
-//じゃんけんゲームと◯×ゲームのボタンを押した時の処理
-for(let i = 0; i < 2; i++){
-  let select = document.getElementById(`select${i}`);
-  select.addEventListener('click', () => {
-    document.getElementById('main-title').style.display = 'none';
-    document.getElementById('game-screen').style.display = 'none';
-    document.getElementById('main-editer');
-  });
-}
+//年月入力時の処理
+const birthYear=document.getElementById('birth-year');
+const birthMonth=document.getElementById('birth-month');
 
 
 
@@ -24,8 +18,8 @@ for(let i = 0; i < 2; i++){
 
 
 
-const janken = document.getElementById('game1Img');
-const marubatu = document.getElementById('game2Img');
+
+
 
 //選ぶゲームによって完成画面の画像を変える
 // if () {
