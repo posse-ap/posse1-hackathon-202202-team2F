@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>startGram</title>
+</head>
+<body>
+    <!-- header -->
+    <!-- section1 -->
+    <div class="container">
+        <h1 id="main-title">プログラミング体験をしてみよう!</h1>
+        <section class="main">
+            <div id="main-container">
+                <div>
+                    <div id="question0">あなたの生年月日を入力してください</div>
+                    <div class="input-birth">
+                        <div>生まれた年(例:2002)
+                            <div class="input" placeholder="2002" id="edit-year" contenteditable="true"></div>
+                        </div>
+                        <div>生まれた月(例:01)
+                            <div class="input" placeholder="4" id="edit-month" contenteditable="true"></div>
+                        </div>
+                    </div>
+                    <button id="decide-birth">年月確定</button>
+                    <div id="question1">あなたの好きな色は？(白の中に英語で書いてね)
+                    </div>
+                    <div id="choice-container1">
+                        <div id="choice10">green</div>
+                        <div id="choice11" contenteditable="true"></div>
+                        <div id="choice12" contenteditable="true"></div>
+                    </div>
+                    <button id="decide-color">色確定</button>
+                    <div id="question2">あなたの誕生色は？</div>
+                    <div id="choice-container2">
+                        <div id="choice20"></div>
+                        <div id="choice21"></div>
+                        <div id="choice22"></div>
+                    </div>
+                    <div id="answer2">正解</div>
+                </div>
+            </div>
+            <div id="side-container">
+                <a class="twitter-timeline" data-lang="ja" data-width="470" data-height="600" data-theme="light"
+                    href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+        <!-- section2-->
+        <section class="share-section">
+            <p>あなたが書いたカラーは、<span class="">プログラミングのコード</span>として使われています!</p>
+            <p>これはPOSSEの<span>半年間の活動</span>で実際に作れるようになります!</p>
+            <span>↓あなたのラッキーカラーを共有↓</span>
+
+            <div class="share-button">
+                <div>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                        data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道"
+                        data-related="posse_program" data-size="large" data-show-count="false"
+                        id="check-button">Tweet</a>
+                    <!-- urlおかしい//// -->
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div>
+                    <a>
+                        <iframe data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.com/"
+                            data-color="default" data-size="large" data-count="false" data-ver="3" data-line-it-id="0"
+                            scrolling="no" frameborder="0" allowtransparency="true"
+                            style="width: 130px !important; height: 30px !important; visibility: visible; position: static !important; opacity: 1 !important;"
+                            class="line-it-button"
+                            src="https://social-plugins.line.me/widget/share?url=https%3A%2F%2Fposse-ap.com%2F&amp;buttonType=share-a&amp;size=large&amp;count=false&amp;color=default&amp;lang=ja&amp;type=share&amp;env=REAL&amp;ver=3&amp;id=0&amp;origin=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;title=Document"
+                            title="Share this page on LINE."></iframe>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div>
+            <div>ITセミナーに参加しよう</div>
+            <div>
+                <a>
+                    <iframe data-lang="ja" data-type="friend" data-env="REAL" data-lineid="@651htnqp"
+                        data-line-it-id="1" scrolling="no" frameborder="0" allowtransparency="true"
+                        style="width: 80px; height: 20px; visibility: visible; position: static !important; opacity: 1 !important;"
+                        class="line-it-button"
+                        src="https://social-plugins.line.me/widget/friend?lineId=%40651htnqp&amp;lang=ja&amp;type=friend&amp;env=REAL&amp;id=1&amp;origin=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;title=Document"
+                        title="POSSEとは既に友だちです。"></iframe>
+                </a>
+            </div>
+            <!-- 表示されない -->
+        </div>
+        <div>
+            <div>twitterでコード公開してるよ。ぜひ見てね。</div>
+            <div></div>
+        </div>
+        <div>
+            <div>大学では教えてくれないティップスを共有してるよ</div>
+            <div></div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async"
+    defer="defer"></script>
+
+</html>
