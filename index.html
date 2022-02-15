@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Startgram</title>
-  </head>
-  <body class="all-container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>制作物の名前</title>
+    </head>
+    <body>
     <!-- header -->
-    
+    <!-- <header>
+        <div class="all-header">
+            <div class="site-header">
+                <h1 class="posselogo">
+                    <a href="#top">
+                        <img src="./img/posselogo.jpg" alt="POSSEロゴ" />
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <a class="linelogo" href="https://lin.ee/sQdqKjf"></a>
+                <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加">
+            </div>
+        </div>
+    </header> -->
     <!-- section1 -->
+    <h1 id="main-title">プログラミング体験をしてみよう!</h1>
+    <section class="main">
+        <div id="main-container">
+            <div class="input-birthday">
+                <h2>あなたの生年月日を入力してください</h2>
+                <div class="birthday-button">
+                    <input type="date" name="birthday">
+                </div>
+            </div>
+            <div id="game-screen">
+                <h2>体験するゲームを選んでください</h2>
+                <div class="game-button">
+                    <div>
+                        <button id="select0">じゃんけんゲーム</button>
+                    </div>
+                    <div>
+                        <button id="select1">マルバツゲーム</button>
+                    </div>
+                </div>
+            </div>
+            <div id="janken-editer0"></div>
+            <div id="janken-editer1"></div>
+            <div id="marubatu-editer0"></div>
+            <div id="marubatu-editer1"></div>
+        </div>
+        <div id="side-container">
+            <a class="twitter-timeline" data-lang="ja" data-width="470" data-height="600" data-theme="light" href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
     <!-- section2-->
     <section class="share-section">
     <p>あなたが書いたカラーは、<span class="">プログラミングのコード</span>として使われています!</p>
@@ -32,6 +75,6 @@
   </section>
     <!-- section3 -->
     <!-- footer -->
-  </body>
-  <script src="script.js"></script>
+    </body>
+    <script src="script.js"></script>
 </html>
