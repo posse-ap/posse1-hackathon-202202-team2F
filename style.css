@@ -11,9 +11,10 @@ footer>div {
 
 body {
     background-color: #C2EDF2;
-    background-image: url("jumpphoto.jpg");
+    background-image: url("skyphoto.jpg");
     background-repeat: no-repeat;
-    background-size: 1400px 750px;
+    background-size: 100% 750px;
+    /* 1400px 750px; */
     margin: 0;
     padding: 0;
     /* position: fixed; */
@@ -161,14 +162,14 @@ body {
 /* /////////section1//////////  */
 
 #main-title {
-    margin: 20px 0;
+    margin: 50vh 0;
     text-align: center;
     font-size: 50px;
 }
 
 .main {
     display: flex;
-    margin: 0 auto;
+    margin: 75px auto;
     gap: 20px;
 }
 
@@ -186,66 +187,70 @@ h2 {
     font-size: 30px;
 }
 
-#question0 {
-    margin-left: 100px;
+#question0,#question1,#question2 {
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align:center;
 }
 
 .input-birth {
     display: flex;
+    padding:20px;
 }
 
-.input-birth>div {
-    margin-left: 100px;
+.input-birth>div+div {
+    margin-left: 50px;
 }
-
+.input-birth>div{
+    width:calc(100% /3);
+}
 #decide-birth,
 #decide-color {
     margin-top: 20px;
     margin-left: 100px;
+    transform: translate(-50%,-50%);
 }
 
-#question1 {
-    margin-left: 100px;
-    margin-top: 20px;
-}
+
 
 #choice-container1,
 #choice-container2 {
     display: flex;
+    padding:20px;
 }
 
 #choice-container1>div,
 #choice-container2>div {
-    margin-left: 100px;
+    width:calc(100% /3);
     margin-top: 20px;
     background-color: white;
     border: 1px solid black;
     padding: 10px;
+    border-radius:10px;
 }
-
-#question2 {
-    margin-left: 100px;
-    margin-top: 20px;
+#choice-container1>div+div,#choice-container2>div+div{
+    margin-left:20px;
 }
 
 #answer2 {
-    margin-left: 100px;
-    margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
     text-align: center;
 }
-
+.button-container{
+    display:flex;
+    justify-content: center;
+}
 #side-container {
     width: 30%;
     height: 600px;
 }
 
-.input {
+.input{
     background-color: white;
     border: 1px solid black;
+    padding:10px;
+    border-radius:10px;
 }
 
 .responsive-tweet {
@@ -297,14 +302,6 @@ align-items: center;
 
 
 /*///////// footer ///////////// */
-
-footer {
-    display: flex;
-    text-align: center;
-    background-color: #e8e8e8;
-    width: 100%;
-    justify-content: space-around;
-}
 
 @media screen and (max-width: 960px) {
     html {
@@ -374,3 +371,5 @@ footer {
 }
 
 @media screen and (max-width: 480px) {}
+
+.line-icon {}

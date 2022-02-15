@@ -15,6 +15,9 @@ var monthText;
 var dateText;
 var colorCode;
 var j;
+const multiplyNumbers=[
+  1,2,3,4,5,6,7,8,9,10
+]
 const choice2=[
   document.getElementById('choice20'),
   document.getElementById('choice21'),
@@ -29,9 +32,9 @@ choice10.style.backgroundColor=choiceColor10;
 
 //年月の入力内容を取得
 function checkBirth(){
-  yearText=editYear.innerHTML;
-  monthText=editMonth.innerHTML;
-  dateText=editDate.innerHTML;
+  yearText=multiplyNumbers[Math.floor(Math.random()*10)]*editYear.innerHTML;
+  monthText=multiplyNumbers[Math.floor(Math.random()*10)]*editMonth.innerHTML;
+  dateText=multiplyNumbers[Math.floor(Math.random()*10)]*editDate.innerHTML;
   colorCode=`rgb(${yearText}, ${monthText}, ${dateText})`;
 }
 //年月取得を確定時実行
@@ -40,10 +43,22 @@ decideBirth.addEventListener('click',function(){
   j=Math.floor(Math.random()*3);
   for(let i=0;i<=2;i++){
     choice2[i].style.backgroundColor="rgb(255,255,255)";
+    choice2[i].style.pointerEvents="fill";
   }
   choice2[j].style.backgroundColor=colorCode;
-
-})
+  if(j==0){
+    choice2[1].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+    choice2[2].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+  }
+  if(j==1){
+    choice2[0].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+    choice2[2].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+  }
+  if(j==2){
+    choice2[0].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+    choice2[1].style.backgroundColor=`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+  };
+});
 //色の入力内容を取得
 function changeColor(){
   let choiceColor11=choice11.innerHTML;
@@ -57,21 +72,28 @@ decideColor.addEventListener('click',function(){
 })
 for(let i=0;i<=2;i++){
   choice2[i].addEventListener('click',function(){
+    if(editDate.innerHTML!=""&&editMonth.innerHTML!=""&&editYear.innerHTML!=""){
     console.log(choice2[i].style.backgroundColor);
     console.log(colorCode);
-    if(choice2[i].style.backgroundColor==colorCode){
-      console.log("ok");
-      answer2.innerHTML="正解!";//クリック時表示成功
-    }else{
-      answer2.innerHTML="不正解!";
-    }
-    shareSection.style.display="flex";
-  })
+      if(choice2[i].style.backgroundColor==colorCode){
+        console.log("ok");
+        answer2.innerHTML="正解!";//クリック時表示成功
+        answer2.style.color="blue";
+      }else{
+        answer2.innerHTML="不正解!";
+        answer2.style.color="red";
+      }
+      shareSection.style.display="flex";
+    };
+  });
 }
 
 
 window.addEventListener('load',function(){
   shareSection.style.display="none";//最初は見せず、クリック時に表示
+  choice2[0].style.pointerEvents="none";
+  choice2[1].style.pointerEvents="none";
+  choice2[2].style.pointerEvents="none";
   document.onkeypress=function(e){
     if(e.key==='Enter'){
       return false;
