@@ -142,39 +142,36 @@ h2 {
   margin: 30px 0;
   font-size: 30px;
 }
-#question0{
-    margin-left:100px;
-    margin-bottom:20px;
-    margin-top:20px;
+#question0,#question1,#question2{
+    margin:20px auto;
 }
 .input-birth{
     display:flex;
+    padding:20px;
 }
-.input-birth>div+div{
-    margin-left:100px;
+.input-birth>div{
+    width:calc(100% / 3);
 }
-#decide-birth, #decide-color{
+.input-birth>div+div,#choice-container1>div+div,#choice-container2>div+div{
+    margin-left:50px;
+}
+.button-container{
+    display:flex;
+    justify-content: center;
+}
+#question0,#question1,#question2{
     margin-top:20px;
-}
-#question1{
-    margin-left:100px;
-    margin-top:20px;
+    text-align:center;
 }
 #choice-container1,#choice-container2{
     display:flex;
+    padding:20px;
 }
 #choice-container1>div,#choice-container2>div{
-    margin-top:20px;
     background-color:white;
     border:1px solid black;
     padding:10px;
-}
-#choice-container1>div+div,#choice-container2>div+div{
-    margin-left:100px;
-}
-#question2{
-    margin-left:100px;
-    margin-top:20px;
+    width:calc(100% /3);
 }
 #answer2{
     margin-top:20px;

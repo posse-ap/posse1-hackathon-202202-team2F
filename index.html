@@ -50,14 +50,19 @@
                 <div>
                     <div id="question0">あなたの生年月日を入力してください
                         <div class="input-birth">
-                            <div>生まれた年(例:2002)<br>(いろんな4桁試してみると?)
-                                <div class="input" placeholder="2002" id="edit-year" contenteditable="true"></div>
+                            <div>生まれた年の下二桁(例:02)<br>(いろんな2桁試してみると?)
+                                <div class="input" placeholder="02" id="edit-year" contenteditable="true"></div>
                             </div>
-                            <div>生まれた月(例:01)<br>（いろんな2桁試してみると?)
+                            <div>生まれた月(例:01)<br>(いろんな2桁試してみると?)
                                 <div class="input" placeholder="4" id="edit-month" contenteditable="true"></div>
                             </div>
+                            <div>生まれた日(例:27)<br>(いろんな二桁試してみると?) 
+                                <div class="input" placeholder="29" id="edit-date" contenteditable="true"></div>
+                            </div>
                         </div>
-                        <button id="decide-birth">年月確定</button>
+                        <div class="button-container">
+                            <button id="decide-birth">年月確定</button>
+                        </div>
                     </div>
                     <div id="question1">あなたの好きな色は？(二つの白の中に英語で書いてね)
                         <div id="choice-container1">
@@ -65,7 +70,9 @@
                             <div id="choice11" contenteditable="true"></div>
                             <div id="choice12" contenteditable="true"></div>
                         </div>
-                        <button id="decide-color">色確定</button>
+                        <div class="button-container">
+                            <button id="decide-color">色確定</button>
+                        </div>
                     </div>
                     <div id="question2">あなたの誕生色は？
                         <div id="choice-container2">
@@ -73,7 +80,7 @@
                             <div id="choice21"></div>
                             <div id="choice22"></div>
                         </div>
-                        <div id="answer2">正解</div>
+                        <div id="answer2">自分の誕生色を押してね</div>
                     </div>
                 </div>
             </div>
@@ -84,7 +91,7 @@
             </div>
         </section>
         <!-- section2-->
-        <section class="share-section">
+        <section id="share-section" class="share-section">
             <p>あなたが書いたカラーは、<span class="">プログラミングのコード</span>として使われています!</p>
             <p>これはPOSSEの<span>半年間の活動</span>で実際に作れるようになります!</p>
             <span>↓あなたのラッキーカラーを共有↓</span>
