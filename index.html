@@ -15,12 +15,17 @@
 <body>
     <header id="posselogoLink wrapper">
         <!-- 横幅ずれないよう固定 -->
+
         <div class="site-header">
             <div class="title-of-website">
+
                 <div class="menu-content">
                     <ul class="topmenu">
-                        <li class="header-list"><a href="#aboutLink"><span class="homepage-title">
-                Startgram</span></a></li>
+                        <li class="header-list">
+                            <a href="#aboutLink">
+                                <span class="homepage-title">Startgram</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
@@ -55,32 +60,41 @@
         <section class="main">
             <div id="main-container">
                 <div>
-                    <div id="question0">あなたの生年月日を入力してください</div>
-                    <div class="input-birth">
-                        <div>生まれた年(例:2002)
-                            <div class="input" placeholder="2002" id="edit-year" contenteditable="true"></div>
+                    <div id="question0">あなたの生年月日を入力してください
+                        <div class="input-birth">
+                            <div>生まれた年の下二桁(例:02)<br>(いろんな2桁試してみると?)
+                                <div class="input" placeholder="02" id="edit-year" contenteditable="true"></div>
+                            </div>
+                            <div>生まれた月(例:01)<br>(いろんな2桁試してみると?)
+                                <div class="input" placeholder="4" id="edit-month" contenteditable="true"></div>
+                            </div>
+                            <div>生まれた日(例:27)<br>(いろんな二桁試してみると?)
+                                <div class="input" placeholder="29" id="edit-date" contenteditable="true"></div>
+                            </div>
                         </div>
-                        <div>生まれた月(例:01)
-                            <div class="input" placeholder="4" id="edit-month" contenteditable="true"></div>
+                        <div class="button-container">
+                            <button id="decide-birth">年月確定</button>
                         </div>
                     </div>
+                    <div id="question1">あなたの好きな色は？(二つの白の中に英語で書いてね)
+                        <div id="choice-container1">
+                            <div id="choice10">green</div>
+                            <div id="choice11" contenteditable="true"></div>
+                            <div id="choice12" contenteditable="true"></div>
+                        </div>
+                        <div class="button-container">
+                            <button id="decide-color">色確定</button>
+                        </div>
+                    </div>
+                    <div id="question2">あなたの誕生色は？
+                        <div id="choice-container2">
+                            <div id="choice20"></div>
+                            <div id="choice21"></div>
+                            <div id="choice22"></div>
+                        </div>
+                        <div id="answer2">自分の誕生色を押してね</div>
+                    </div>
                 </div>
-                <button id="decide-birth">年月確定</button>
-
-                <div id="question1">あなたの好きな色は？(二つの白の中に英語で書いてね)</div>
-                <div id="choice-container1">
-                    <div id="choice10">green</div>
-                    <div id="choice11" contenteditable="true"></div>
-                    <div id="choice12" contenteditable="true"></div>
-                </div>
-                <button id="decide-color">色確定</button>
-                <div id="question2">あなたの誕生色は？</div>
-                <div id="choice-container2">
-                    <div id="choice20"></div>
-                    <div id="choice21"></div>
-                    <div id="choice22"></div>
-                </div>
-                <div id="answer2">正解</div>
             </div>
             <div id="side-container">
                 <a class="twitter-timeline" data-lang="ja" data-width="470" data-height="600" data-theme="light" href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a>
@@ -104,6 +118,9 @@
             <span>↓あなたのラッキーカラーを共有↓</span>
         </div>
 
+        <!-- section2-->
+
+
         <div class="share-button">
             <div>
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道" data-related="posse_program" data-size="large" data-show-count="false" id="check-button">Tweet</a>
@@ -111,12 +128,9 @@
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <div>
-                <a>
-                    <iframe data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.com/" data-color="default" data-size="large" data-count="false" data-ver="3" data-line-it-id="0" scrolling="no" frameborder="0" allowtransparency="true" style="width: 130px !important; height: 30px !important; visibility: visible; position: static !important; opacity: 1 !important;"
-                        class="line-it-button" src="https://social-plugins.line.me/widget/share?url=https%3A%2F%2Fposse-ap.com%2F&amp;buttonType=share-a&amp;size=large&amp;count=false&amp;color=default&amp;lang=ja&amp;type=share&amp;env=REAL&amp;ver=3&amp;id=0&amp;origin=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;title=Document"
-                        title="Share this page on LINE."></iframe>
-                </a>
+
             </div>
+            <!-- 表示されない -->
         </div>
     </section>
     </div>
@@ -152,7 +166,6 @@
     </footer>
 </body>
 <script src="script.js"></script>
-<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 
 </html>
