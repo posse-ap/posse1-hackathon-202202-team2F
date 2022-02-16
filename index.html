@@ -36,7 +36,7 @@
                     </a>
                 </h1>
             </div>
-            <div>
+            <div class="sns-share-button">
                 <a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw" class="btn-social-circle btn-social-circle--twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
@@ -44,7 +44,7 @@
                 <a href="https://www.instagram.com/posse_programming/?ref=badge" class="btn-social-circle btn-social-circle--instagram">
                     <span class="insta">
             <i class="fab fa-instagram"></i>
-          </span>
+                  </span>
                 </a>
 
 
@@ -54,8 +54,8 @@
             </div>
         </div>
     </header>
+    <div id="main-title">プログラミング体験をしてみよう!</div>
     <div class="container">
-        <div id="main-title">プログラミング体験をしてみよう!</div>
         <section class="main">
             <div id="main-container">
                 <div>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="button-container">
-                            <button id="decide-birth">年月確定</button>
+                            <button id="decide-birth">数値確定</button>
                         </div>
                     </div>
                     <div id="question1">あなたの好きな色は?(二つの白の中に英語で書いてね)
@@ -91,7 +91,7 @@
                             <div id="choice21"></div>
                             <div id="choice22"></div>
                         </div>
-                        <div id="answer2">自分の誕生色を上の三つのボタンから当ててみよう</div>
+                        <div id="answer2">自分のバースデーカラーを上の三つのボタンから当ててみよう</div>
                     </div>
                 </div>
             </div>
@@ -110,13 +110,17 @@
         <div class="share-message">
             <span>↓あなたのラッキーカラーを共有↓</span>
         </div>
-        
+
         <div class="share-button">
             <div id="tweet-share-container">
                 <div>
-                    <a class="twitter-share-button" id="tweet-share">Tweet</a>
+                    <a id="tweet-share">Tweet</a>
                 </div>
             </div>
+            <!-- 表示されない -->
+            <iframe data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2F/" data-color="default" data-size="small" data-count="false" data-ver="3" data-line-it-id="0" scrolling="no" frameborder="0"
+                allowtransparency="true" style="width: 100px; height: 100px; visibility: visible; position:static !important; opacity:1 !important" class="line-it-button" src="https://social-plugins.line.me/widget/share?url=https%3A%2F%2Fposse-ap.github.io%2Fposse1-hackathon-202202-team2F%2F&amp;buttonType=share-a&amp;size=small&amp;count=false&amp;color=default&amp;lang=ja&amp;type=share&amp;env=REAL&amp;ver=3&amp;id=0&amp;origin=https://posse-ap.github.io/posse1-hackathon-202202-team2F/&amp;title=Document"></iframe>
+
         </div>
     </section>
     <div class="responsive-tweet">
@@ -159,5 +163,6 @@
 </body>
 <script src="script.js "></script>
 <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js " async="async " defer="defer "></script>
+<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 
 </html>

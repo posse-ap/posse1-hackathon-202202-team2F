@@ -1,8 +1,7 @@
     body {
         background-color: #C2EDF2;
-        background-image: url("skyphoto.jpg");
         background-repeat: no-repeat;
-        background-size: 100% 750px;
+        background-size: 100% 100%;
         /* 1400px 750px; */
         margin: 0;
         padding: 0;
@@ -87,6 +86,8 @@
     }
     /* ツイッタ,インスタ、LINEの共有ボタン*/
     
+    .sns-share-button {}
+    
     .btn-social-circle {
         display: inline-block;
         position: relative;
@@ -130,27 +131,33 @@
     }
     
     .container {
-        margin: 0 auto;
         /* width: 1200px; */
+        width: 100%;
+        margin: 0 auto;
     }
     /* /////////section1//////////  */
     
     #main-title {
-        margin: 55vh 0;
+        background-image: url("skyphoto.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50vh 0;
         text-align: center;
         font-size: 50px;
+        color: white;
+        width: 100%;
     }
     
     .main {
         display: flex;
-        margin: 75px auto;
+        justify-content: center;
+        margin: 75px 0 75px 0;
         gap: 20px;
     }
     
     #main-container {
         width: 70%;
-        height: 600px;
-        margin-right: 10px;
+        height: 100%;
         background-color: white;
         opacity: 0.5;
     }
@@ -161,43 +168,47 @@
         font-size: 30px;
     }
     
-    #question0,#question1,#question2{
+    #question0,
+    #question1,
+    #question2 {
         margin-bottom: 20px;
         margin-top: 20px;
-        text-align:center;
+        text-align: center;
     }
     
     .input-birth {
         display: flex;
-        padding:20px;
-    }
-    .input-birth>div+div{
-        margin-left:50px;
-    }
-    .input-birth>div {
-        width:calc(100% /3);
+        padding: 20px;
     }
     
-    .button-container{
-        display:flex;
+    .input-birth>div+div {
+        margin-left: 50px;
+    }
+    
+    .input-birth>div {
+        width: calc(100% /3);
+    }
+    
+    .button-container {
+        display: flex;
         justify-content: center;
     }
-
+    
     #choice-container1,
     #choice-container2 {
         display: flex;
-        padding:20px;
+        padding: 20px;
     }
     
     #choice-container1>div,
     #choice-container2>div {
-        width:calc(100% / 3);
+        width: calc(100% / 3);
         margin-top: 20px;
-        margin-left:20px;
+        margin-left: 20px;
         background-color: white;
         border: 1px solid black;
         padding: 10px;
-        border-radius:10px;
+        border-radius: 10px;
     }
     
     #answer2 {
@@ -214,10 +225,9 @@
     .input {
         background-color: white;
         border: 1px solid black;
-        padding:10px;
-        border-radius:10px;
+        padding: 10px;
+        border-radius: 10px;
     }
-    
     /* /////// section2/////////// */
     
     #share-section {
@@ -255,7 +265,7 @@
     .responsive-tweet {
         display: none;
     }
-/*///////// footer ///////////// */
+    /*///////// footer ///////////// */
     
     footer {
         display: flex;
@@ -334,7 +344,6 @@
         .title-of-website {
             margin: 0;
         }
-
         .main-header {
             max-width: 600px;
         }
@@ -372,7 +381,6 @@
             flex-basis: 33%;
             height: 130px;
         }
-
         .app-mark {
             display: block;
         }
