@@ -139,6 +139,7 @@
         margin: 55vh 0;
         text-align: center;
         font-size: 50px;
+        color: white;
     }
     
     .main {
@@ -161,43 +162,47 @@
         font-size: 30px;
     }
     
-    #question0,#question1,#question2{
+    #question0,
+    #question1,
+    #question2 {
         margin-bottom: 20px;
         margin-top: 20px;
-        text-align:center;
+        text-align: center;
     }
     
     .input-birth {
         display: flex;
-        padding:20px;
-    }
-    .input-birth>div+div{
-        margin-left:50px;
-    }
-    .input-birth>div {
-        width:calc(100% /3);
+        padding: 20px;
     }
     
-    .button-container{
-        display:flex;
+    .input-birth>div+div {
+        margin-left: 50px;
+    }
+    
+    .input-birth>div {
+        width: calc(100% /3);
+    }
+    
+    .button-container {
+        display: flex;
         justify-content: center;
     }
-
+    
     #choice-container1,
     #choice-container2 {
         display: flex;
-        padding:20px;
+        padding: 20px;
     }
     
     #choice-container1>div,
     #choice-container2>div {
-        width:calc(100% / 3);
+        width: calc(100% / 3);
         margin-top: 20px;
-        margin-left:20px;
+        margin-left: 20px;
         background-color: white;
         border: 1px solid black;
         padding: 10px;
-        border-radius:10px;
+        border-radius: 10px;
     }
     
     #answer2 {
@@ -214,8 +219,8 @@
     .input {
         background-color: white;
         border: 1px solid black;
-        padding:10px;
-        border-radius:10px;
+        padding: 10px;
+        border-radius: 10px;
     }
     
     .responsive-tweet {
