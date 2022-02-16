@@ -265,6 +265,20 @@
     .responsive-tweet {
         display: none;
     }
+    
+    #tweet-share {
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 6px;
+        font-weight: 500;
+        color: #FFF;
+        background-color: #00acee;
+    }
+    
+    .fa-twitter {
+        color: #FFF;
+    }
     /*///////// footer ///////////// */
     
     footer {
