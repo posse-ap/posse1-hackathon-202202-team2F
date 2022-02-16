@@ -1,5 +1,8 @@
 body {
-    background-color: beige;
+    background-color: #C2EDF2;
+    background-image: url("jumpphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px 750px;
     margin: 0;
     padding: 0;
     /* position: fixed; */
@@ -8,7 +11,13 @@ body {
 
 /* //////////header//////////// */
 
-.all-header {
+.title-of-website {
+    display: flex;
+    margin-right: auto;
+}
+
+
+/* .all-header {
     display: flex;
     justify-content: center;
     background: white;
@@ -17,7 +26,7 @@ body {
     height: 96px;
     z-index: 100;
     box-shadow: 3px 3px 3px rgb(204 204 204);
-}
+} */
 
 .site-header {
     display: flex;
@@ -32,6 +41,14 @@ body {
     display: flex;
     align-items: center;
     font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    height: 96px;
+    top: 0;
+}
+
+.posselogo {
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
 .posselogo img {
@@ -115,12 +132,18 @@ body {
     background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
     /*グラデーション①*/
     ;
-    border: solid 5px linear-gradient(135deg, #427eff 0%, #f13f79 70%);
+    border: solid 5px linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    /* linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat; */
+}
+
+.btn-social-circle--line {
+    background: #02B804;
+    border: solid 5px #02B804;
 }
 
 .container {
-  margin: 0 auto;
-  width: 1200px;
+    margin: 0 auto;
+    width: 1200px;
 }
 
 /* /////////section1//////////  */
@@ -140,7 +163,9 @@ body {
 #main-container {
     width: 70%;
     height: 600px;
-    background-color: aqua;
+    /* margin-right: 10px; */
+    background-color: white;
+    opacity: 0.5;
 }
 
 h2 {
@@ -218,21 +243,36 @@ h2 {
 
 /* /////// section2/////////// */
 
-.share-section {
+#share-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
     border: 3px solid grey;
+    border-radius: 20px;
+    /* margin-top: 20px; */
     z-index: 1;
-    margin: 50px 10vw;
+    /* margin: 100px; */
+    margin: 100px 10vw;
     padding: 20px 10px;
 }
 
 .share-button {
     display: flex;
     gap: 20px;
+}
+
+.share-message {
+    letter-spacing: 0.42em;
+}
+
+.explain-message {
+    letter-spacing: 0.22em;
+}
+
+.important-word {
+    font-weight: bold;
 }
 
 
@@ -271,66 +311,51 @@ footer {
     html {
         max-width: 768px;
     }
-
     .homepage-title {
         font-size: 4vw;
     }
-
     #main-title {
         font-size: 40px;
     }
-
     .main {
         max-width: 730px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
     .all-header {
         max-width: 600px;
     }
-
     .site-header {
         max-width: 600px;
     }
-    
     #main-title {
         font-size: 5vw;
     }
-
     #main-container {
         width: 90%;
         margin: auto;
     }
-
     #side-container {
         display: none;
     }
-
     .responsive-tweet {
         display: block;
         width: 90%;
         margin: auto;
     }
-
-
     .main {
         flex-direction: column;
     }
-
     .btn-social-circle {
         display: none;
     }
-
-    .linelogo{
+    .linelogo {
         display: none;
     }
-
-    .footer-linelogo{
+    .footer-linelogo {
         display: block;
     }
-
     footer {
         flex-basis: 33%;
     }
