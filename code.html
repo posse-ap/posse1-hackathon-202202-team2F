@@ -1,14 +1,477 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コード公開ページ</title>
 </head>
+
 <body>
-    <pre><code></code></pre>
-    <pre><code></code></pre>
-    <pre><code></code></pre>
+    <div>コード公開ページ</div>
+    <pre>html
+        <code>
+            &lt;!DOCTYPE html&gt; &lt;html lang="ja"&gt; &lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;link rel="stylesheet" href="reset.css"&gt;
+&lt;link rel="stylesheet" href="style.css"&gt; &lt;link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"&gt; &lt;link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet"&gt; &lt;link rel="stylesheet"
+href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"&gt; &lt;script&gt; type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"&gt;&lt;/script&gt; &lt;title&gt;Startgram&lt;/title&gt; &lt;/head&gt; &lt;body&gt;
+&lt;header id="posselogoLink wrapper"&gt; &lt;div class="site-header"&gt; &lt;div class="title-of-website"&gt; &lt;div class="menu-content"&gt; &lt;ul class="topmenu"&gt; &lt;li class="header-list"&gt; &lt;a href="#top" onclick="$('html,body').animate({
+scrollTop: 0 }); return false;"&gt; &lt;span&gt; class="homepage-title"&gt;Startgram&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;h1 class="posselogo"&gt; Made by &lt;a&gt; href="https://posse-ap.com/"&gt; &lt;img src="posselogo.jpg"
+alt="POSSEロゴ"&gt; &lt;/a&gt; &lt;/a&gt; &lt;/h1&gt; &lt;/div&gt; &lt;div class="sns-share-button"&gt; &lt;a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw" class="btn-social-circle btn-social-circle--twitter"&gt; &lt;i&gt; class="fab fa-twitter"&gt;&lt;/i&gt;
+&lt;/a&gt; &lt;a href="https://www.instagram.com/posse_programming/?ref=badge" class="btn-social-circle btn-social-circle--instagram"&gt; &lt;span class="insta"&gt; &lt;i&gt; class="fab fa-instagram"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; &lt;a href="https://lin.ee/sQdqKjf"
+class="btn-social-circle btn-social-circle--line"&gt; &lt;i&gt; class="fab fa-line"&gt;&lt;/i&gt; &lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/header&gt; &lt;div&gt; id="main-title"&gt;プログラミング体験をしてみよう!&lt;/div&gt; &lt;div class="container"&gt; &lt;section
+class="main"&gt; &lt;div id="main-container"&gt; &lt;div&gt; &lt;div id="question0"&gt; &lt;b&gt; あなたの生年月日は? &lt;/b&gt; &lt;div class="input-birth"&gt; &lt;div&gt;生まれた年の下二桁(例:02)&lt;br&gt;(いろんな2桁試してみると?) &lt;div&gt; class="input" id="edit-year" contenteditable="true"&gt;&lt;/div&gt;
+&lt;/div&gt; &lt;div&gt;生まれた月(例:01)&lt;br&gt;(いろんな2桁試してみると?) &lt;div&gt; class="input" id="edit-month" contenteditable="true"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div&gt;生まれた日(例:27)&lt;br&gt;(いろんな2桁試してみると?) &lt;div&gt; class="input" id="edit-date" contenteditable="true"&gt;&lt;/div&gt;
+&lt;/div&gt; &lt;/div&gt; &lt;div class="button-container"&gt; &lt;button&gt; id="decide-birth"&gt;数値確定&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id="question1"&gt; &lt;b&gt; あなたの好きな色は?(2つの白の中に英語で書いてね) &lt;/b&gt; &lt;div id="choice-container1"&gt;
+&lt;div&gt; id="choice10"&gt;green&lt;/div&gt; &lt;div&gt; id="choice11" contenteditable="true"&gt;ここに入力&lt;/div&gt; &lt;div&gt; id="choice12" contenteditable="true"&gt;ここに入力&lt;/div&gt; &lt;/div&gt; &lt;div class="button-container"&gt; &lt;button&gt;
+id="decide-color"&gt;色確定&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id="question2"&gt; &lt;b&gt; あなたのバースデーカラーは? &lt;/b&gt; &lt;div id="choice-container2"&gt; &lt;div&gt; id="choice20"&gt;&lt;/div&gt; &lt;div&gt; id="choice21"&gt;&lt;/div&gt; &lt;div&gt;
+id="choice22"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div&gt; id="answer2"&gt;自分のバースデーカラーを上の三つのボタンから当ててみよう&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id="side-container"&gt; &lt;a&gt; class="twitter-timeline" data-lang="ja" data-width="470" data-height="600"
+data-theme="light" href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw"&gt;Tweets by posse_program&lt;/a&gt; &lt;script&gt; async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; &lt;/div&gt; &lt;/div&gt; &lt;/section&gt;
+&lt;!-- section2--&gt; &lt;section id="share-section"&gt; &lt;div class="explain-message"&gt; &lt;p&gt;あなたが入力した情報は、&lt;span&gt;として使われています! class="important-word"&gt;プログラミングのコード&lt;/span&gt;として使われています!&lt;/p&gt; &lt;p&gt;これはPOSSEの&lt;span&gt;で実際に作れるようになります!
+class="important-word"&gt;半年間の活動&lt;/span&gt;で実際に作れるようになります!&lt;/p&gt; &lt;/div&gt; &lt;div class="share-message"&gt; &lt;span&gt;↓あなたバースデーカラーを共有↓&lt;/span&gt; &lt;/div&gt; &lt;div class="share-button"&gt; &lt;div id="tweet-share-container"&gt; &lt;div&gt;
+&lt;a&gt; id="tweet-share"&gt;共有しよう&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- 表示されない --&gt; &lt;iframe&gt; data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2F/" data-color="default"
+data-size="small" data-count="false" data-ver="3" data-line-it-id="0" scrolling="no" frameborder="0" allowtransparency="true" style="width: 100px; height: 100px; visibility: visible; position:static !important; opacity:1 !important" class="line-it-button"
+src="https://social-plugins.line.me/widget/share?url=https%3A%2F%2Fposse-ap.github.io%2Fposse1-hackathon-202202-team2F%2F&amp;buttonType=share-a&amp;size=small&amp;count=false&amp;color=default&amp;lang=ja&amp;type=share&amp;env=REAL&amp;ver=3&amp;id=0&amp;origin=https://posse-ap.github.io/posse1-hackathon-202202-team2F/&amp;title=Document"&gt;&lt;/iframe&gt;
+&lt;/div&gt; &lt;/section&gt; &lt;div class="responsive-tweet"&gt; &lt;blockquote class="twitter-tweet"&gt; &lt;p lang="ja" dir="ltr"&gt;プログラミングは9割挫折するって言われてるけど、POSSEに入ってから1年以上プログラミング継続できてるなぁ😌&lt;br&gt;メンバーにわからないところ聞いたり、一緒に勉強できるから楽しいし、何より学びになるのが最高すぎる✨&lt;br&gt;これからも全員で成長していこうねぇー！&lt;br&gt;&lt;br&gt;
+&lt;a&gt; href="https://twitter.com/hashtag/%E9%A7%86%E3%81%91%E5%87%BA%E3%81%97%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8A%E3%81%9F%E3%81%84?src=hash&amp;ref_src=twsrc%5Etfw"&gt;#駆け出しエンジニアと繋がりたい&lt;/a&gt;&lt;/p&gt;&mdash;
+POSSE | 新メンバー募集中！ (@posse_program) &lt;a&gt; href="https://twitter.com/posse_program/status/1436269216013815810?ref_src=twsrc%5Etfw"&gt;September 10, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script&gt; async src="https://platform.twitter.com/widgets.js"
+charset="utf-8"&gt;&lt;/script&gt; &lt;/div&gt; &lt;!-- footer --&gt; &lt;footer&gt; &lt;div class=" line-area"&gt; &lt;div&gt; class="icon line-title"&gt;[ITセミナー]に参加しよう!!&lt;/div&gt; &lt;div class="icon"&gt; &lt;a href=" https://lin.ee/sQdqKjf " class="btn-social-circle
+btn-social-circle--line app-mark"&gt; &lt;i&gt; class="fab fa-line "&gt;&lt;/i&gt; &lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- 表示されない --&gt; &lt;div class="twitter-area"&gt; &lt;div&gt; class="icon twitter-title "&gt;[twitter限定]でコード公開!!&lt;/div&gt; &lt;div
+class="icon"&gt; &lt;a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw " class="btn-social-circle btn-social-circle--twitter app-mark"&gt; &lt;i&gt; class="fab fa-twitter "&gt;&lt;/i&gt; &lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="insta-area"&gt;
+&lt;div&gt; class="icon insta-title"&gt;[大学では教えてくれない]情報!!&lt;/div&gt; &lt;div class="icon"&gt; &lt;a href="https://www.instagram.com/posse_programming/?ref=badge " class="btn-social-circle btn-social-circle--instagram app-mark"&gt; &lt;span class="insta
+"&gt; &lt;i&gt; class="fab fa-instagram "&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; &lt;/div&gt; &lt;/footer&gt; &lt;/body&gt; &lt;script&gt; src="script.js "&gt;&lt;/script&gt; &lt;script&gt; src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js
+" async="async " defer="defer "&gt;&lt;/script&gt; &lt;script&gt; src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"&gt;&lt;/script&gt; &lt;/html&gt;
+
+        </code>
+    </pre>
+    <pre>javascript
+        <code>
+            'use strict'; //年月入力時の処理 const editYear = document.getElementById('edit-year'); const editMonth = document.getElementById('edit-month'); const editDate = document.getElementById('edit-date'); const decideBirth = document.getElementById('decide-birth');
+const choice10 = document.getElementById('choice10'); const choice11 = document.getElementById('choice11'); const choice12 = document.getElementById('choice12'); const answer2 = document.getElementById('answer2'); const shareSection = document.getElementById('share-section');
+const tweetShare = document.getElementById('tweet-share'); var yearText; var monthText; var dateText; var colorCode; var j; const multiplyNumbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] const choice2 = [ document.getElementById('choice20'), document.getElementById('choice21'),
+document.getElementById('choice22'), ]; tweetShare.addEventListener('click', function() { var tweetContent = "あなたのバースデーカラーは" + colorCode + "です"; var hashtags = "大学,必修,表参道,プログラミング,あなたのバースデーカラー"; var url = "https://posse-ap.github.io/posse1-hackathon-202202-team2F/";
+window.open("https://twitter.com/share?text=" + tweetContent + "&url=" + url + "&hashtags=" + hashtags); }) const decideColor = document.getElementById('decide-color'); //例としてgreenと緑色表示 let choiceColor10 = choice10.innerHTML; choice10.style.backgroundColor
+= choiceColor10; //年月の入力内容を取得 function checkBirth() { yearText = multiplyNumbers[Math.floor(Math.random() * 10)] * editYear.innerHTML; monthText = multiplyNumbers[Math.floor(Math.random() * 10)] * editMonth.innerHTML; dateText = multiplyNumbers[Math.floor(Math.random()
+* 10)] * editDate.innerHTML; colorCode = `rgb(${yearText}, ${monthText}, ${dateText})`; } //年月取得を確定時実行 decideBirth.addEventListener('click', function() { if (editDate.innerHTML != "" && editMonth.innerHTML != "" && editYear.innerHTML != "") { checkBirth();
+j = Math.floor(Math.random() * 3); for (let i = 0; i &lt;=2 ; i++) { choice2[i].style.pointerEvents="fill" ; } choice2[j].style.backgroundColor=c olorCode; if (j==0 ) { choice2[1].style.backgroundColor=` rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)},
+${Math.floor(Math.random()*256)})`; choice2[2].style.backgroundColor=` rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`; } if (j==1 ) { choice2[0].style.backgroundColor=` rgb(${Math.floor(Math.random()*256)},
+${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`; choice2[2].style.backgroundColor=` rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`; } if (j==2 ) { choice2[0].style.backgroundColor=`
+rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`; choice2[1].style.backgroundColor=` rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+}; } }); //色の入力内容を取得 function changeColor() { let choiceColor11=c hoice11.innerHTML; let choiceColor12=c hoice12.innerHTML; choice11.style.backgroundColor=c hoiceColor11; choice12.style.backgroundColor=c hoiceColor12; } //背景色変化を確定時実行 decideColor.addEventListener(
+'click', function() { changeColor(); }) var japanese; for (let i=0 ; i &lt;=2 ; i++) { choice2[i].addEventListener( 'click', function() { if (choice2[i].style.backgroundColor==c olorCode) { answer2.innerHTML="正解!" ; //クリック時表示成功 answer2.style.color="blue"
+; } else { answer2.innerHTML="不正解!" ; answer2.style.color="red" ; } shareSection.style.display="flex" ; }); }; window.addEventListener( 'load', function() { shareSection.style.display="none" ; //最初は見せず、クリック時に表示 choice2[0].style.pointerEvents="none" ;
+choice2[1].style.pointerEvents="none" ; choice2[2].style.pointerEvents="none" ; editYear.innerHTML="" ; editMonth.innerHTML="" ; editDate.innerHTML="" ; document.onkeypress=f unction(e) { if (e.key==='Enter' ) { return false; } //Enterキー無効化してcolorcodeがずれるのを防ぐ
+} }) //
+
+        </code>
+    </pre>
+    <pre>css
+        <code>
+            body {
+                background-color: #C2EDF2;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* 1400px 750px; */
+                margin: 0;
+                padding: 0;
+                /* position: fixed; */
+            }
+            /* //////////header//////////// */
+            
+            .title-of-website {
+                display: flex;
+                margin-right: auto;
+            }
+            /* .all-header {
+            display: flex;
+            justify-content: center;
+            background: white;
+            position: fixed;
+            width: 100%;
+            height: 96px;
+            z-index: 100;
+            box-shadow: 3px 3px 3px rgb(204 204 204);
+        } */
+            
+            .site-header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                position: fixed;
+                width: 100%;
+                height: 96px;
+                z-index: 100;
+                box-shadow: 3px 3px 3px rgb(204 204 204);
+                display: flex;
+                align-items: center;
+                font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+                height: 96px;
+                top: 0;
+            }
+            
+            .posselogo {
+                text-align: center;
+                align-items: center;
+                display: flex;
+            }
+            
+            .posselogo img {
+                max-width: 130px;
+                vertical-align: middle;
+                object-fit: cover;
+            }
+            
+            .menu-content {
+                margin-right: 30px;
+            }
+            
+            .topmenu {
+                justify-content: center;
+                display: flex;
+                font-weight: bold;
+                font-size: 20px;
+                flex-grow: 1;
+            }
+            /* ヘッダー内の文字に触れた時 */
+            
+            .header-list a:hover {
+                color: gray;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            /* ヘッダー内文字 */
+            
+            .header-list a {
+                text-decoration: none;
+                color: black;
+                padding: 0 1vw;
+                white-space: nowrap;
+            }
+            
+            .homepage-title {
+                font-family: 'Montserrat Subrayada', sans-serif;
+                font-size: 50px;
+            }
+            /* ツイッタ,インスタ、LINEの共有ボタン*/
+            
+            .sns-share-button {}
+            
+            .btn-social-circle {
+                display: inline-block;
+                position: relative;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #FFF;
+                width: 50px;
+                height: 50px;
+                padding: 5px;
+                font-size: 25px;
+                border-radius: 50%;
+                text-align: center;
+                box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.25), inset 0 -2px 0px rgba(0, 0, 0, 0.18);
+                transition: .2s;
+            }
+            
+            .btn-social-circle .fa-instagram .fa-twitter {
+                line-height: 30px;
+            }
+            
+            .btn-social-circle:hover {
+                box-shadow: none;
+            }
+            
+            .btn-social-circle--twitter {
+                background: #1da1f3;
+                /* border: solid 5px #1da1f3; */
+            }
+            
+            .btn-social-circle--instagram {
+                background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+                /*グラデーション①*/
+                ;
+                /* border: solid 5px linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat; */
+                /* linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat; */
+            }
+            
+            .btn-social-circle--line {
+                background: #02B804;
+                /* border: solid 5px #02B804; */
+            }
+            
+            .container {
+                /* width: 1200px; */
+                width: 100%;
+                margin: 0 auto;
+            }
+            /* /////////section1//////////  */
+            
+            #main-title {
+                background-image: url("skyphoto.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 50vh 0;
+                text-align: center;
+                font-size: 50px;
+                color: white;
+                width: 100%;
+            }
+            
+            .main {
+                display: flex;
+                justify-content: center;
+                margin: 75px 0 75px 0;
+                gap: 20px;
+            }
+            
+            #main-container {
+                width: 70%;
+                height: 100%;
+                background-color: white;
+                opacity: 0.5;
+            }
+            
+            h2 {
+                text-align: center;
+                margin: 30px 0;
+                font-size: 30px;
+            }
+            
+            #question0,
+            #question1,
+            #question2 {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            
+            .input-birth {
+                display: flex;
+                padding: 20px;
+            }
+            
+            .input-birth>div+div {
+                margin-left: 50px;
+            }
+            
+            .input-birth>div {
+                width: calc(100% /3);
+            }
+            
+            .button-container {
+                display: flex;
+                justify-content: center;
+            }
+            
+            #choice-container1,
+            #choice-container2 {
+                display: flex;
+                padding: 20px;
+            }
+            
+            #choice-container1>div,
+            #choice-container2>div {
+                width: calc(100% / 3);
+                margin-top: 20px;
+                margin-left: 20px;
+                background-color: white;
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            
+            #answer2 {
+                margin-bottom: 20px;
+                display: inline-block;
+                text-align: center;
+            }
+            
+            #side-container {
+                width: 30%;
+                height: 600px;
+            }
+            
+            .input {
+                background-color: white;
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            /* /////// section2/////////// */
+            
+            #share-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                border: 3px solid grey;
+                border-radius: 20px;
+                /* margin-top: 20px; */
+                z-index: 1;
+                /* margin: 100px; */
+                margin: 100px 10vw;
+                padding: 20px 10px;
+            }
+            
+            .share-button {
+                display: flex;
+                gap: 20px;
+            }
+            
+            .share-message {
+                letter-spacing: 0.42em;
+            }
+            
+            .explain-message {
+                letter-spacing: 0.22em;
+            }
+            
+            .important-word {
+                font-weight: bold;
+            }
+            
+            .responsive-tweet {
+                display: none;
+            }
+            
+            #tweet-share {
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 12px;
+                padding: 6px;
+                font-weight: 500;
+                color: #FFF;
+                background-color: #00acee;
+            }
+            
+            .fa-twitter {
+                color: #FFF;
+            }
+            /*///////// footer ///////////// */
+            
+            footer {
+                display: flex;
+                text-align: center;
+                background-color: white;
+                width: 100%;
+                height: 100px;
+            }
+            
+            footer>div {
+                width: calc(100% / 3);
+            }
+            
+            .line-title {
+                background-color: #02B804;
+                background-size: 10px 10px;
+                opacity: 0.5;
+                color: white;
+            }
+            
+            .twitter-title {
+                background-color: #1da1f3;
+                background-size: 10px 10px;
+                opacity: 0.5;
+                color: white;
+            }
+            
+            .insta-title {
+                background-color: #D389B7;
+                background-size: 10px 10px;
+                opacity: 0.5;
+                color: white;
+            }
+            
+            .app-mark {
+                top: 20px;
+                border-radius: 10px;
+            }
+            
+            .icon {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            @media screen and (max-width: 960px) {
+                html {
+                    max-width: 960px;
+                }
+                .main {
+                    max-width: 900px;
+                }
+                .container {
+                    margin: 0 auto;
+                    max-width: 960px;
+                }
+            }
+            
+            @media screen and (max-width: 768px) {
+                html {
+                    max-width: 768px;
+                }
+                .homepage-title {
+                    font-size: 4vw;
+                }
+                #main-title {
+                    font-size: 40px;
+                }
+                .main {
+                    max-width: 730px;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                .title-of-website {
+                    margin: 0;
+                }
+                .main-header {
+                    max-width: 600px;
+                }
+                .site-header {
+                    max-width: 600px;
+                }
+                #main-title {
+                    font-size: 5vw;
+                }
+                #main-container {
+                    width: 90%;
+                    margin: auto;
+                }
+                #side-container {
+                    display: none;
+                }
+                .responsive-tweet {
+                    display: block;
+                    width: 90%;
+                    margin: auto;
+                }
+                .main {
+                    flex-direction: column;
+                }
+                .btn-social-circle {
+                    display: none;
+                }
+                .linelogo {
+                    display: none;
+                }
+                .footer-linelogo {
+                    display: block;
+                }
+                footer {
+                    flex-basis: 33%;
+                    height: 130px;
+                }
+                .app-mark {
+                    display: block;
+                }
+            }
+            
+            @media screen and (max-width: 480px) {}
+        </code>
+    </pre>
 </body>
+
 </html>
