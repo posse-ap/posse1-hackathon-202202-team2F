@@ -9,20 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
-    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Startgram</title>
 </head>
 
 <body>
     <header id="posselogoLink wrapper">
-        <!-- 横幅ずれないよう固定 -->
-
         <div class="site-header">
             <div class="title-of-website">
 
                 <div class="menu-content">
                     <ul class="topmenu">
                         <li class="header-list">
-                            <a href="#aboutLink">
+                            <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
                                 <span class="homepage-title">Startgram</span>
                             </a>
                         </li>
@@ -31,7 +30,7 @@
                 </div>
                 <h1 class="posselogo">
                     Made by
-                    <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
+                    <a href="https://posse-ap.com/">
                         <img src="posselogo.jpg" alt="POSSEロゴ">
                     </a>
                     </a>
@@ -56,31 +55,31 @@
         </div>
     </header>
     <div class="container">
-        <h1 id="main-title">プログラミング体験をしてみよう!</h1>
+        <div id="main-title">プログラミング体験をしてみよう!</div>
         <section class="main">
             <div id="main-container">
                 <div>
-                    <div id="question0">あなたの生年月日を入力してください
+                    <div id="question0">あなたの生年月日は?
                         <div class="input-birth">
                             <div>生まれた年の下二桁(例:02)<br>(いろんな2桁試してみると?)
-                                <div class="input" placeholder="02" id="edit-year" contenteditable="true"></div>
+                                <div class="input" id="edit-year" contenteditable="true"></div>
                             </div>
                             <div>生まれた月(例:01)<br>(いろんな2桁試してみると?)
-                                <div class="input" placeholder="4" id="edit-month" contenteditable="true"></div>
+                                <div class="input" id="edit-month" contenteditable="true"></div>
                             </div>
                             <div>生まれた日(例:27)<br>(いろんな二桁試してみると?)
-                                <div class="input" placeholder="29" id="edit-date" contenteditable="true"></div>
+                                <div class="input" id="edit-date" contenteditable="true"></div>
                             </div>
                         </div>
                         <div class="button-container">
                             <button id="decide-birth">年月確定</button>
                         </div>
                     </div>
-                    <div id="question1">あなたの好きな色は？(二つの白の中に英語で書いてね)
+                    <div id="question1">あなたの好きな色は?(二つの白の中に英語で書いてね)
                         <div id="choice-container1">
                             <div id="choice10">green</div>
-                            <div id="choice11" contenteditable="true"></div>
-                            <div id="choice12" contenteditable="true"></div>
+                            <div id="choice11" contenteditable="true">ここに入力</div>
+                            <div id="choice12" contenteditable="true">ここに入力</div>
                         </div>
                         <div class="button-container">
                             <button id="decide-color">色確定</button>
@@ -92,7 +91,7 @@
                             <div id="choice21"></div>
                             <div id="choice22"></div>
                         </div>
-                        <div id="answer2">自分の誕生色を押してね</div>
+                        <div id="answer2">自分の誕生色を上の三つのボタンから当ててみよう</div>
                     </div>
                 </div>
             </div>
@@ -120,50 +119,50 @@
         
         <div class="share-button">
             <div>
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道" data-related="posse_program" data-size="large" data-show-count="false" id="check-button">Tweet</a>
-                <!-- urlおかしい//// -->
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <iframe id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.4e067713e19d4fff483536ddc4df18b9.ja.html#dnt=false&amp;hashtags=%E8%A1%A8%E5%8F%82%E9%81%93&amp;id=twitter-widget-2&amp;lang=ja&amp;original_referer=http%3A%2F%2F127.0.0.1%3A5500%2F&amp;related=posse_program&amp;size=l&amp;text=Document&amp;time=1644976574074&amp;type=share&amp;url=https%3A%2F%2Fposse-ap.com%2F&amp;via=posse_program" data-url="https://posse-ap.com/" style="position: static; visibility: visible; width: 100px; height: 50px;"></iframe>
+                <!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://posse-ap.com/" data-text="" data-via="posse_program" data-hashtags="表参道" data-related="posse_program" data-size="large" data-show-count="false" id="check-button">Tweet</a>
+                <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> --> 
             </div>
             <div>
-                <a href="https://social-plugins.line.me/lineit/share?url="></a>
-                <script type="text/javascript">LineIt.loadButton();</script>
+                <!-- 表示されない -->
             </div>
-            <!-- 表示されない -->
+           
         </div>
     </section>
     </div>
     <!-- footer -->
     <footer>
-        <div>
-            <div>ITセミナーに参加しよう</div>
-            <div>
 
-                <a href="https://lin.ee/sQdqKjf" class="btn-social-circle btn-social-circle--line">
-                    <i class="fab fa-line"></i>
-                </a>
-            </div>
-            <!-- 表示されない -->
-        </div>
-        <div>
-            <div>twitter限定でコード公開!!</div>
-            <div>
-                <a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw" class="btn-social-circle btn-social-circle--twitter">
-                    <i class="fab fa-twitter"></i>
+        <div class=" line-area">
+            <div class="icon line-title">[ITセミナー]に参加しよう!!</div>
+            <div class="icon">
+                <a href=" https://lin.ee/sQdqKjf " class="btn-social-circle btn-social-circle--line app-mark">
+                    <i class="fab fa-line "></i>
                 </a>
             </div>
         </div>
-        <div>
-            <div>大学では教えてくれない学生に重要な情報を公開!!</div>
-            <div>
-                <a href="https://www.instagram.com/posse_programming/?ref=badge" class="btn-social-circle btn-social-circle--instagram">
-                    <span class="insta">
-            <i class="fab fa-instagram"></i>
-          </span>
+        <!-- 表示されない -->
+
+        <div class="twitter-area">
+            <div class="icon twitter-title ">[twitter限定]でコード公開!!</div>
+            <div class="icon">
+                <a href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw " class="btn-social-circle btn-social-circle--twitter app-mark">
+                    <i class="fab fa-twitter "></i>
+                </a>
+            </div>
+        </div>
+        <div class="insta-area">
+            <div class="icon insta-title">[大学では教えてくれない]情報!!</div>
+            <div class="icon">
+                <a href="https://www.instagram.com/posse_programming/?ref=badge " class="btn-social-circle btn-social-circle--instagram app-mark">
+                    <span class="insta ">
+                     <i class="fab fa-instagram "></i>
+                    </span>
                 </a>
             </div>
     </footer>
 </body>
-<script src="script.js"></script>
-<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+<script src="script.js "></script>
+<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js " async="async " defer="defer "></script>
 
 </html>
