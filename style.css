@@ -218,9 +218,6 @@
         border-radius:10px;
     }
     
-    .responsive-tweet {
-        display: none;
-    }
     /* /////// section2/////////// */
     
     #share-section {
@@ -254,7 +251,10 @@
     .important-word {
         font-weight: bold;
     }
-   
+    
+    .responsive-tweet {
+        display: none;
+    }
 /*///////// footer ///////////// */
     
     footer {
