@@ -26,8 +26,8 @@ const choice2 = [
 ];
 
 tweetShare.addEventListener('click', function() {
-    var tweetContent = "あなたのラッキーカラーは" + colorCode + "です";
-    var hashtags = "大学,必修,表参道,プログラミング,あなたのラッキーカラー";
+    var tweetContent = "あなたのバースデーカラーは" + colorCode + "です";
+    var hashtags = "大学,必修,表参道,プログラミング,あなたのバースデーカラー";
     var url = "https://posse-ap.github.io/posse1-hackathon-202202-team2F/";
     window.open("https://twitter.com/share?text=" + tweetContent + "&url=" + url + "&hashtags=" + hashtags);
 })
