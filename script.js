@@ -10,6 +10,7 @@ const choice11=document.getElementById('choice11');
 const choice12=document.getElementById('choice12');
 const answer2=document.getElementById('answer2');
 const shareSection=document.getElementById('share-section');
+const tweetShare=document.getElementById('tweet-share');
 var yearText;
 var monthText;
 var dateText;
@@ -24,6 +25,12 @@ const choice2=[
   document.getElementById('choice22'),
 ];
 
+tweetShare.addEventListener('click',function(){
+  var tweetContent="あなたのラッキーカラーは"+colorCode+"です";
+  var hashtags="大学,必修,表参道,プログラミング,あなたのラッキーカラー";
+  var url ="https://posse-ap.com/";
+  window.open("https://twitter.com/share?text=" + tweetContent+"&url="+url+"&hashtags="+hashtags);
+})
 
 const decideColor=document.getElementById('decide-color');
 //例としてgreenと緑色表示
@@ -71,6 +78,7 @@ function changeColor(){
 decideColor.addEventListener('click',function(){
   changeColor();
 })
+var japanese;
 for(let i=0;i<=2;i++){
   choice2[i].addEventListener('click',function(){
     
